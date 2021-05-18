@@ -1,0 +1,7 @@
+apiKey: "AIzaSyCZIqOiRukBHhhX9fM7mvFoD8wdLjxxIVU",
+    authDomain: "invigilator-82e71.firebaseapp.com",
+    projectId: "invigilator-82e71",
+    storageBucket: "invigilator-82e71.appspot.com",
+    messagingSenderId: "492381439153",
+    appId: "1:492381439153:web:11142a78601b195dc4ce90",
+    measurementId: "G-Q94DPT1TMW"
