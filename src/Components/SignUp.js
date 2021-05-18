@@ -12,8 +12,8 @@ const SignUp = () => {
   const [error, setError] = useState(null);
   const [className, setClass] = useState("");
 
-  const addStudent = (studentID,className) => {
-    addStudentToSection(studentID,className);
+  const addStudent = (email,className) => {
+    addStudentToSection(email,className);
   }
 
   const produceRandom = (x) => {
@@ -34,7 +34,7 @@ const SignUp = () => {
         generateStudentUserDocument(user, displayName, userType, rollNo, profileLink, className);
         console.log(userType+displayName+"signup");
         //console.log({displayName});
-        addStudent(user.uid,className);
+        addStudent(email,className);
       }
       else if(userType === "T"){
         let exams= [];

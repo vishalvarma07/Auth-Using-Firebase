@@ -15,10 +15,10 @@ const arrayUnion = firebase.firestore.FieldValue.arrayUnion;
 //const userRef = firestore.doc(`users/${user.uid}`);
 //const snapshot = await userRef.get();
 
-export const addStudentToSection = (studentID,section) => {
+export const addStudentToSection = (email,section) => {
   let sectionRef = db.collection("classes").doc(section);
   sectionRef.update({
-    students : firebase.firestore.FieldValue.arrayUnion(studentID),
+    students : firebase.firestore.FieldValue.arrayUnion(email),
   })
 }
 
